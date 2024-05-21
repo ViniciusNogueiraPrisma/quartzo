@@ -9,9 +9,38 @@ function debounce(callback, delay) {
   };
 }
 
-//function parallax aqui
+//expanded itens solu
 
-/////// fim parallax
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".itens-expanded");
+  let currentIndex = 0;
+  let hoverPaused = false;
+
+  items.forEach((item, index) => {
+    item.addEventListener("mouseover", () => {
+      hoverPaused = true;
+      items.forEach((item) => {
+        item.classList.remove("active");
+      });
+      item.classList.add("active");
+    });
+
+    item.addEventListener("mouseout", () => {
+      hoverPaused = false;
+      items.forEach((item) => {
+        item.classList.remove("active");
+      });
+    });
+  });
+
+  setInterval(() => {
+    if (!hoverPaused) {
+      items[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % items.length;
+      items[currentIndex].classList.add("active");
+    }
+  }, 4000);
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   let clicked = false;
