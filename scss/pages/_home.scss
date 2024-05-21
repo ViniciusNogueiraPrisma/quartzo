@@ -4023,7 +4023,11 @@ body {
     }
 
     .text-gr {
-      width: 50%;
+      width: 45%;
+
+      @media (max-width: 1659px) {
+        width: 35%;
+      }
 
       @media (max-width: 1199px) {
         width: 100%;
@@ -4046,7 +4050,7 @@ body {
     }
 
     .links-gr {
-      width: 50%;
+      // width: 50%;
       display: flex;
       gap: 16px;
 
