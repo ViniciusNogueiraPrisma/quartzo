@@ -3714,8 +3714,8 @@ body {
 
       @media (max-width: 548px) {
         flex: 1 1 620px;
-        border: 1px solid;
       }
+
       @media (max-width: 422px) {
         flex: 1 1 720px;
       }
@@ -3795,7 +3795,15 @@ body {
       flex: 1 1 682px;
 
       @media (max-width: 991px) {
-        flex: 1 1 500px;
+        flex: 1 1 550px;
+      }
+
+      @media (max-width: 548px) {
+        flex: 1 1 620px;
+      }
+      
+      @media (max-width: 422px) {
+        flex: 1 1 720px;
       }
     }
 
