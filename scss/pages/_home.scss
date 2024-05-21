@@ -3712,6 +3712,14 @@ body {
         flex: 1 1 550px;
       }
 
+      @media (max-width: 548px) {
+        flex: 1 1 620px;
+        border: 1px solid;
+      }
+      @media (max-width: 422px) {
+        flex: 1 1 720px;
+      }
+
       .title-itens {
         opacity: 0;
         transition: 0.3s;
