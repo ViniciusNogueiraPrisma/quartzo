@@ -3745,7 +3745,7 @@ body {
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
 
-      @media (max-width: 991px) {
+      @media (max-width: 1199px) {
         border-bottom-left-radius: 0px;
         border-top-right-radius: 8px;
       }
@@ -3780,16 +3780,20 @@ body {
       transition: 0.5s;
       flex: 1 1 682px;
 
+      @media (max-width: 1199px) {
+        flex: 1 1 600px;
+      }
+
       @media (max-width: 991px) {
-        flex: 1 1 550px;
+        flex: 1 1 680px;
       }
 
-      @media (max-width: 548px) {
-        flex: 1 1 620px;
+      @media (max-width: 550px) {
+        flex: 1 1 810px;
       }
 
-      @media (max-width: 422px) {
-        flex: 1 1 720px;
+      @media (max-width: 400px) {
+        flex: 1 1 910px;
       }
 
       .title-itens {
@@ -3820,8 +3824,13 @@ body {
         }
 
         @media (max-width: 1199px) {
-          width: 414px;
+          width: 100%;
+          padding: 0px;
+
           padding-top: 24px;
+
+          right: 0;
+          left: 0;
         }
 
         @media (max-width: 991px) {
@@ -3885,16 +3894,20 @@ body {
       transition: 0.5s;
       flex: 1 1 682px;
 
+      @media (max-width: 1199px) {
+        flex: 1 1 600px;
+      }
+
       @media (max-width: 991px) {
-        flex: 1 1 550px;
+        flex: 1 1 680px;
       }
 
-      @media (max-width: 548px) {
-        flex: 1 1 620px;
+      @media (max-width: 550px) {
+        flex: 1 1 810px;
       }
 
-      @media (max-width: 422px) {
-        flex: 1 1 720px;
+      @media (max-width: 400px) {
+        flex: 1 1 910px;
       }
     }
 
@@ -3903,7 +3916,7 @@ body {
       flex: 1 1 238px;
       min-width: 0;
 
-      @media (max-width: 991px) {
+      @media (max-width: 1199px) {
         width: 100%;
         height: unset;
         padding: 16px !important;
@@ -3926,7 +3939,7 @@ body {
         transition: 0.5s;
         opacity: 0;
 
-        @media (max-width: 991px) {
+        @media (max-width: 1199px) {
           position: absolute;
         }
       }
@@ -3942,7 +3955,7 @@ body {
         top: 0;
         padding-bottom: 64px;
 
-        @media (max-width: 991px) {
+        @media (max-width: 1199px) {
           position: relative;
           padding-bottom: 0px;
           align-items: center;
@@ -3968,7 +3981,7 @@ body {
             line-height: 118%;
           }
 
-          @media (max-width: 991px) {
+          @media (max-width: 1199px) {
             transform: unset;
             writing-mode: unset;
           }
