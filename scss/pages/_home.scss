@@ -3536,6 +3536,10 @@ body {
     border-radius: var(---size-base-size-8, 8px);
     background: var(--brand-secondary-01, #4c5766);
 
+    @media (max-width: 1199px) {
+      align-items: flex-end;
+    }
+
     @media (max-width: 991px) {
       flex-direction: column;
       align-items: unset;
@@ -3551,6 +3555,10 @@ body {
         height: 682px;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
+
+        @media (max-width: 1199px) {
+          height: 729px;
+        }
 
         @media (max-width: 991px) {
           height: 600px;
@@ -3569,6 +3577,11 @@ body {
     .texts-sobre {
       width: 682px;
       padding-right: 99px;
+
+      @media (max-width: 1199px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
 
       @media (max-width: 991px) {
         // border: 1px solid red;
@@ -3845,7 +3858,7 @@ body {
 
           color: var(--font-font-h5-inverse, #fff);
           font-family: var(--font-font-body-xl-font-family, Roboto);
-          font-size: var(--font-font-body-xl-font-size, 18px);
+          font-size: var(--font-font-body-xl-font-size, 17px);
           font-style: normal;
           font-weight: 400;
           line-height: var(--font-font-body-xl-line-height, 26px);
