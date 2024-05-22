@@ -3918,7 +3918,7 @@ body {
 
       @media (max-width: 1199px) {
         width: 100%;
-        height: unset;
+        height: unset !important;
         padding: 16px !important;
 
         flex: 1 1 200px;

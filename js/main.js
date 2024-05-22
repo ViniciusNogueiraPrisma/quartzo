@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentIndex = (currentIndex + 1) % items.length;
       items[currentIndex].classList.add("active");
     }
-  }, 4000);
+  }, 114000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
