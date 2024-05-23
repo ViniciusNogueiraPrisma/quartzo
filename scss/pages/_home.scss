@@ -3423,7 +3423,7 @@ body {
           &:last-child {
             &::after {
               height: 0px;
-              animation: grow-500 4s forwards 3s;
+              animation: grow-500 4s forwards 2.5s;
             }
           }
 
