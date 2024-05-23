@@ -3479,14 +3479,14 @@ body {
             animation: grow-150 2s forwards 1.5s;
 
             @media (max-width: 522px) {
-              height: 185px;
-              animation: grow-185 2s forwards;
+              height: 0px;
+              animation: grow-185 2s forwards 1.5s;
             }
 
             @media (max-width: 473px) {
-              height: 220px;
+              height: 0px;
               top: 60px;
-              animation: grow-220 2s forwards;
+              animation: grow-220 2s forwards 1.5s;
             }
           }
 
