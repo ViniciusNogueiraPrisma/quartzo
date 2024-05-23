@@ -67,8 +67,8 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    // função para detectar o sistema operacional
-    function getMobileOperatingSystem() {
+    // Função para detectar o sistema operacional
+    function getOperatingSystem() {
       var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/android/i.test(userAgent)) {
@@ -79,15 +79,37 @@ document
         return "iOS";
       }
 
+      // Desktop OS
+      if (/Win/i.test(userAgent)) {
+        return "Windows";
+      }
+
+      if (/Mac/i.test(userAgent)) {
+        return "macOS";
+      }
+
+      if (/Linux/i.test(userAgent)) {
+        return "Linux";
+      }
+
       return "unknown";
     }
 
-    var os = getMobileOperatingSystem();
+    var os = getOperatingSystem();
 
     if (os === "Android") {
       window.location.href =
         "https://play.google.com/store/apps/details?id=br.com.ctminvest.customers&hl=en";
     } else if (os === "iOS") {
+      window.location.href =
+        "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
+    } else if (os === "Windows") {
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=br.com.ctminvest.customers&hl=en";
+    } else if (os === "macOS") {
+      window.location.href =
+        "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
+    } else if (os === "Linux") {
       window.location.href =
         "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
     } else {
