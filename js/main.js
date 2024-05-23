@@ -65,18 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
 document
   .getElementById("btn-conta")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Evita que o link padrão seja seguido
+    event.preventDefault();
 
-    // Função para detectar o sistema operacional
+    // função para detectar o sistema operacional
     function getMobileOperatingSystem() {
       var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-      // Android
       if (/android/i.test(userAgent)) {
         return "Android";
       }
 
-      // iOS
       if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         return "iOS";
       }
@@ -88,10 +86,10 @@ document
 
     if (os === "Android") {
       window.location.href =
-        "https://play.google.com/store/apps/details?id=seu.app.android"; // Substitua pelo URL do seu app no Google Play
+        "https://play.google.com/store/apps/details?id=br.com.ctminvest.customers&hl=en";
     } else if (os === "iOS") {
       window.location.href =
-        "https://apps.apple.com/us/app/seu-app-ios/id123456789"; // Substitua pelo URL do seu app na App Store
+        "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
     } else {
       alert("Seu sistema operacional não é suportado para este download.");
     }
