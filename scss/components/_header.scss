@@ -22,7 +22,12 @@
     justify-content: space-between;
 
     @media (max-width: 991px) {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    @media (max-width: 573px) {
+      flex-direction: column;
     }
 
     .logo-header {
@@ -745,8 +750,13 @@
 
   @media (max-width: 1199px) {
     width: 100%;
-    margin-top: 32px;
-    justify-content: space-between;
+    // margin-top: 32px;
+    justify-content: flex-end;
+    // border: 1px solid red;
+
+    button {
+      display: none !important;
+    }
   }
 
   @media (max-width: 1659px) {
@@ -771,8 +781,10 @@
       background-color: #378c4c;
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: 573px) {
       // display: none;
+      width: 100%;
+      text-align: center;
     }
   }
 }
