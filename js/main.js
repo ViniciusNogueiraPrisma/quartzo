@@ -62,6 +62,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document
+  .getElementById("btn-conta")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Evita que o link padrão seja seguido
+
+    // Função para detectar o sistema operacional
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Android
+      if (/android/i.test(userAgent)) {
+        return "Android";
+      }
+
+      // iOS
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+      }
+
+      return "unknown";
+    }
+
+    var os = getMobileOperatingSystem();
+
+    if (os === "Android") {
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=seu.app.android"; // Substitua pelo URL do seu app no Google Play
+    } else if (os === "iOS") {
+      window.location.href =
+        "https://apps.apple.com/us/app/seu-app-ios/id123456789"; // Substitua pelo URL do seu app na App Store
+    } else {
+      alert("Seu sistema operacional não é suportado para este download.");
+    }
+  });
+
 $(".titulosCentral").each(function () {
   $("#resultsTitle").append($(this));
 });
