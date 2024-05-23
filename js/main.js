@@ -67,7 +67,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    // Função para detectar o sistema operacional
+    // função para detectar o sistema operacional
     function getOperatingSystem() {
       var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -79,7 +79,6 @@ document
         return "iOS";
       }
 
-      // Desktop OS
       if (/Win/i.test(userAgent)) {
         return "Windows";
       }
@@ -100,19 +99,24 @@ document
     if (os === "Android") {
       window.location.href =
         "https://play.google.com/store/apps/details?id=br.com.ctminvest.customers&hl=en";
-    } else if (os === "iOS") {
+    
+      } else if (os === "iOS") {
       window.location.href =
         "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
-    } else if (os === "Windows") {
+    
+      } else if (os === "Windows") {
       window.location.href =
         "https://play.google.com/store/apps/details?id=br.com.ctminvest.customers&hl=en";
-    } else if (os === "macOS") {
+   
+      } else if (os === "macOS") {
       window.location.href =
         "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
-    } else if (os === "Linux") {
+   
+      } else if (os === "Linux") {
       window.location.href =
         "https://apps.apple.com/br/app/ctm-investimentos/id1429100165";
-    } else {
+   
+      } else {
       alert("Seu sistema operacional não é suportado para este download.");
     }
   });
