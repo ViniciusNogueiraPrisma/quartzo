@@ -3422,27 +3422,71 @@ body {
 
           &:last-child {
             &::after {
+              height: 0px;
+              animation: grow-500 4s forwards 3s;
+            }
+          }
+
+          @keyframes grow-500 {
+            from {
+              height: 0;
+            }
+
+            to {
               height: 500px;
+            }
+          }
+
+          @keyframes grow-150 {
+            from {
+              height: 0;
+            }
+
+            to {
+              height: 150px;
+            }
+          }
+
+          @keyframes grow-185 {
+            from {
+              height: 0;
+            }
+
+            to {
+              height: 185px;
+            }
+          }
+
+          @keyframes grow-220 {
+            from {
+              height: 0;
+            }
+
+            to {
+              height: 220px;
             }
           }
 
           &:after {
             content: "";
             width: 2px;
-            height: 150px;
+            height: 0px;
             position: absolute;
             background-color: rgba(55, 140, 76, 1);
             margin-left: 41px;
             z-index: 0;
-            top: 31px;
+            top: 40px;
+            animation: grow-150 2s forwards 1.5s;
 
             @media (max-width: 522px) {
               height: 185px;
+              animation: grow-185 2s forwards;
             }
 
             @media (max-width: 473px) {
               height: 220px;
               top: 60px;
+              animation: grow-220 2s forwards;
             }
           }
 
